@@ -1,45 +1,54 @@
-# Mario | Senior Network Engineer · Network Architect · Security Lead (en transición)
+# Mario Ovalle | Network Specialist · NOC N3 · Infraestructura ISP
 
-Opero redes ISP con tráfico real: core routing, GPON, monitoreo y automatización. Hoy construyo herramientas y arquitectura de seguridad sobre esa base.
+Opero redes ISP multi-vendor en producción: **8 nodos, +15.000 clientes, +15 enlaces DWDM**. Automatizo la operación con scripts e IA y trabajo hacia arquitectura y seguridad de red.
 
-📍 Chile · 🟢 **Disponible para nuevas oportunidades** · 📫 [LinkedIn](TU_LINKEDIN) · ✉️ TU_CORREO
+📍 Santiago, Chile · 🟢 **Disponible: Network Engineer / NOC N3 / Network Specialist** · [LinkedIn](https://linkedin.com/in/mario-ovalle) · ✉️ mnovalleo@gmail.com
 
 ---
 
 ## Qué hago
 
-- **Redes ISP / Core:** diseño y operación de routing (BGP/OSPF), segmentación por VLAN, PPPoE, IPv6 dual-stack multi-nodo.
-- **GPON:** provisioning de OLT/ONT, troubleshooting por capa (física → enlace → routing).
-- **NOC N2/N3:** respuesta a incidentes, mantenimiento de nodos, comunicación con clientes.
-- **Seguridad:** SOC con Wazuh, Suricata y OpenVAS; auditoría ISO/IEC 27001 (Lead Auditor).
-- **Automatización:** scripts, APIs y bots para todo proceso repetitivo.
+- **Routing y switching:** MikroTik, Cisco, Huawei, Juniper. BGP, OSPF, VLAN, PPPoE.
+- **Redes de acceso:** GPON con ZTE, Huawei y V-SOL. Redes HFC y fibra óptica.
+- **Transporte óptico:** diseño y operación CWDM/DWDM (+15 enlaces DWDM en servicio).
+- **Seguridad:** FortiGate (firewall, políticas, VPN), firewall estándar por nodo, red administrativa segmentada para gestión.
+- **Monitoreo:** Zabbix, Grafana, LibreNMS.
+- **NOC N3:** diagnóstico, escalamiento y continuidad de servicio con gestión por tickets.
+
+## Resultados en producción (MetroWAN, 2023–2026)
+
+- Definí un **firewall estándar para todos los nodos** y creé la **red administrativa de gestión** de toda la red.
+- Automaticé con IA tres procesos integrados a Zabbix, Grafana y LibreNMS:
+  - chequeo de caída de sondas cada 5 minutos,
+  - detección de consumos fuera de contrato,
+  - detección y protección de equipos bajo ataque externo.
+- Proyecté y operé transporte óptico CWDM/DWDM manteniendo la disponibilidad del servicio.
+- Administré controladores Ubiquiti, TP-Link Omada y Fortinet.
 
 ## Proyectos
 
 | Proyecto | Qué resuelve | Stack |
 |---|---|---|
-| **NetiOLT** | Plataforma SaaS multi-tenant para gestión de OLT GPON | _completar_ |
-| **NOC Dashboard** | Monitoreo SNMP agnóstico de fabricante, con panel web | FastAPI · SQLite · SNMP · HTML SPA |
-| **SOC Lab / Buildout** | Detección y gestión de vulnerabilidades en entorno ISP | Wazuh · Suricata · OpenVAS |
-| **IPv6 Dual-Stack** | Despliegue de IPv6 en múltiples nodos | MikroTik · _completar_ |
+| **NOC Dashboard** | Monitoreo SNMP agnóstico de fabricante con panel web | FastAPI · SQLite · SNMP · HTML SPA |
+| **MasterOLT** | Gestión multi-tenant de OLT GPON (SaaS, en desarrollo) | _completar_ |
+| **SOC Lab** | Detección y gestión de vulnerabilidades | Wazuh · Suricata · OpenVAS |
+| **IPv6 Dual-Stack** | Despliegue multi-nodo | MikroTik · _completar_ |
 
-> Enlaza cada fila al repo (`[NetiOLT](https://github.com/TU_USUARIO/netiolt)`). Si un proyecto es privado, deja una descripción con arquitectura y resultado, sin datos del cliente.
+> Enlaza cada fila a su repo. Un proyecto sin enlace en este README no cuenta como evidencia.
+
+## Certificaciones
+
+- ISO/IEC 27001 Lead Auditor — ITCERT (2026)
+- Fortinet NSE3, FortiGate Operator (2026) · NSE1 (2025)
+- MikroTik MTCRE (2025) · MTCNA (2024)
+- Técnico Nivel Superior en Telecomunicaciones — DUOC UC
 
 ## Stack
 
-**Equipos:** MikroTik · Huawei · Cisco · Arista · Fortinet · ZTE
-**Monitoreo / Seguridad:** Zabbix · LibreNMS · Grafana · Wazuh · Suricata · OpenVAS
+**Equipos:** MikroTik · Cisco · Huawei · Juniper · Fortinet · ZTE · V-SOL · Ubiquiti · TP-Link Omada
+**Monitoreo y seguridad:** Zabbix · Grafana · LibreNMS · Wazuh · Suricata · OpenVAS
 **Automatización:** Python · Bash · APIs REST · RouterOS scripting
-
-## Certificaciones y formación
-
-- ISO/IEC 27001 Lead Auditor
-- Técnico de Nivel Superior en Telecomunicaciones — DUOC UC
 
 ## Cómo trabajo
 
-Estabilizar primero, analizar causa raíz después. Control operacional estricto, escalabilidad y documentación que sirva en producción.
-
----
-
-<!-- Opcional: estadísticas de GitHub. Solo útiles si hay actividad pública visible. -->
+Estabilizar primero, causa raíz después. Control operacional estricto, segmentación clara y automatización de todo lo repetitivo.
